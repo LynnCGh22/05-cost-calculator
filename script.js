@@ -42,14 +42,17 @@ form.addEventListener("submit", function(event) {
 
   const toppingCount = selectedToppings.length; // Count selected toppings
 
+  const isDelivery = deliveryCheckbox.checked; // true or false
+
   // Call our function to calculate total
   const totalCost = calculatePizzaTotal(
     basePrice,
     toppingCount,
-    toppingPrice
+    toppingPrice,
+    isDelivery
   );
 
   // Update the page with the total cost
-  totalDisplay.textContent = `Total: $${totalCost}`;
+  totalDisplay.textContent = `Total: $${totalCost.toFixed(2)}`;
 });
 

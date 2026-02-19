@@ -17,6 +17,12 @@
     <p>Base Price: $10</p>
     <p>Each Topping: $2</p>
     <form id="pizza-order-form">
+      <label for="size">Select Size:</label>
+      <select id="size">
+        <option value="8">Small ($8)</option>
+        <option value="10" selected>Medium ($10)</option>
+        <option value="12">Large ($12)</option>
+      </select>
       <div class="toppings">
         <label class="topping-label">
           <input type="checkbox" name="topping" value="pepperoni">
@@ -39,6 +45,11 @@
       <p id="total"></p>
     </form>
   </div>
+  <label class="topping-label">
+    <input type="checkbox" id="delivery">
+    Delivery (+$5)
+</label>
+<button type="submit">Calculate Total</button>
   <script src="script.js"></script>
 </body>
 

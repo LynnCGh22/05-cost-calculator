@@ -95,3 +95,13 @@ h1 {
 p {
   font-size: 19.2px; 
 }
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 2px solid #d63600;
+  font-size: 16px;
+}
+
